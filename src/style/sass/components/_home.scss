@@ -1,0 +1,90 @@
+.navB{
+    margin: 50px 50px;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        max-height: 100%;
+    }
+    .user-img{
+        border-radius: 50%;
+    }
+}
+.arabic{
+    direction: rtl;
+}
+.hagez{
+    background-color: #01845C;
+    padding: 10px 50px;
+    font-size: 19px;
+    color: $white;
+
+}
+.data-items{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px 0;
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    text-align: center;
+    .title{
+        color: #01845c;
+        p,span{
+            font-size: 16px;
+        }
+    }
+}
+.card{
+    background-repeat:no-repeat;
+    width: 647px;
+    height: 1064px;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .img-cont{
+        margin-top: 150px;
+        height: 240px;
+        width: 240px;
+        border-radius: 50%;
+        overflow: hidden;
+        aspect-ratio: 1 / 1;
+        margin-left: 10px;
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .arabicName{
+        font-size: 22px;
+        font-weight: 800;
+        color: #231f20;
+        margin-top: 45px;
+    }
+    .englishName{
+        font-size: 18px;
+        font-weight: 400;
+        color: #231f20;
+        margin-top: 15px;
+    }
+    .id-num{
+        font-size: 32px;
+        font-weight: 600;
+        color: #16684e;
+        margin-top: 62px;
+    }
+}

@@ -1,0 +1,12 @@
+.header {
+  background-image: url("https://www.unicef.org/montenegro/sites/unicef.org.montenegro/files/styles/media_large_image/public/his_sofija-05-19-235_0.jpg.webp?itok=ef-9HmuB");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.header .overlay {
+  height: 100%;
+  background: rgb(129, 129, 129);
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.6) 34%, rgba(0, 0, 0, 0.7) 100%, rgb(0, 0, 0) 100%);
+}/*# sourceMappingURL=home.css.map */
