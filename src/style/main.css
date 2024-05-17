@@ -361,7 +361,8 @@ ol.breadcrumb li:not(.active):after {
 .item .title {
   color: #01845c;
 }
-.item .title p, .item .title span {
+.item .title p,
+.item .title span {
   font-size: 14px;
 }
 
@@ -437,4 +438,58 @@ ol.breadcrumb li:not(.active):after {
   overflow: hidden;
   aspect-ratio: 1/1;
   margin-left: 0px;
+}
+
+.cards-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 30px;
+  gap: 20px;
+}
+.cards-cont .item {
+  padding: 10px;
+  background-color: #01845C;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cards-cont .item .img-cont {
+  border-radius: 20px;
+  overflow: hidden;
+  height: 255px;
+  width: 255px;
+  aspect-ratio: 1/1;
+}
+.cards-cont .item .img-cont img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (max-width: 1200px) {
+  .cards-cont {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 991px) {
+  .cards-cont {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 595px) {
+  .cards-cont {
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+    gap: 5px;
+  }
+  .cards-cont .item .img-cont {
+    border-radius: 20px;
+    overflow: hidden;
+    height: 150px;
+    width: 150px;
+    aspect-ratio: 1/1;
+  }
 }/*# sourceMappingURL=main.css.map */

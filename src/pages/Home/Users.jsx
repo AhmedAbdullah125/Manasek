@@ -18,7 +18,8 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useLocation } from 'react-router-dom';
 
 export default function Users() {
-    
+    // let name = this.props.name;
+    // console.log(name);
     var min = 10000000;
     var max = 99999999;
     var rand = Math.floor(min + (Math.random() * (max - min)));

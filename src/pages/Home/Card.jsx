@@ -14,7 +14,8 @@ import qr5 from '../../assets/QRs/5.png'
 import qr6 from '../../assets/QRs/6.png'
 import { useLocation } from 'react-router-dom';
 
-export default function Card() {
+export default function Card(arr) {
+    console.log(arr);
     var min = 10000000;
     var max = 99999999;
     var rand = Math.floor(min + (Math.random() * (max - min)));
@@ -28,6 +29,7 @@ export default function Card() {
         { id: 5, img: user5, code: rand, name: "اسماعيل محمد صبرى محمد", nameEng: "Ismail Mohamed Sabry Mohamed", career: "طبيب", passportNum: "A21636152", birthDate: "04/03/1986",qr:qr5},
         { id: 6, img: user6, code: rand, name: "السيد محمد السيد الغرباوى", nameEng: "ُElsayed Mohamed Elasyed Elgharabawy", career: "حر", passportNum: "A28504983", birthDate: "17/10/1978",qr:qr6},
     ]
+
     return (
         <div className='card' style={{ backgroundImage: `url(${card1})` }}>
             <div className="content">

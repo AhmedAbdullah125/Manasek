@@ -6,13 +6,14 @@ import { Outlet } from 'react-router-dom';
 
 
 export default function Layout() {
+
     // const [faviconUrl, setFaviconUrl] = useState({ icon });
 
     useEffect(() => {
         document.title = "Manasek Alhaj"
     }, []);
     return (
-        <Outlet>
+        <Outlet >
             {/* <Favicon /> */}
         </Outlet>
     )
