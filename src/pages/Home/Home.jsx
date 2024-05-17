@@ -1,12 +1,12 @@
 import React from 'react'
 import wezarah from '../../assets/1.jpg'
-import user1 from '../../assets/user1.png'
+import user1 from '../../assets/users/user1.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useLocation } from 'react-router-dom';
 
 export default function Home() {
-  var min = 1000000;
-  var max = 9999999;
+  var min = 10000000;
+  var max = 99999999;
   var rand =Math.floor(min + (Math.random() * (max - min)));
   let date =new Date("2021-03-25");
   let detailedDate = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;

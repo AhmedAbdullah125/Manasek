@@ -12,7 +12,7 @@ function App() {
   path: '', element: <Layout></Layout>, children: [
     { index: true, element: <Suspense><Home></Home></Suspense> },
     { path: '/users/*', element: <Users></Users> },
-    { path: '/card', element: <Card></Card> },
+    { path: '/card/*', element: <Card></Card> },
     { path: '*', element: <NotFound></NotFound> },
     // { path: '/courses', element: <CoursesPage></CoursesPage> },
     // { path: '/Services', element: <ServicesPage></ServicesPage> },

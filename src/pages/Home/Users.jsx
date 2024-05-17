@@ -1,27 +1,37 @@
 import React from 'react'
 import wezarah from '../../assets/1.jpg'
-import user1 from '../../assets/user1.png'
+import user1 from '../../assets/users/user1.png'
+import user2 from '../../assets/users/user2.png'
+import user3 from '../../assets/users/user3.png'
+
+import qr1 from '../../assets/QRs/1.png'
+import qr2 from '../../assets/QRs/2.png'
+import qr3 from '../../assets/QRs/3.png'
+
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useLocation } from 'react-router-dom';
 
 export default function Users() {
-    var min = 1000000;
-    var max = 9999999;
+    
+    var min = 10000000;
+    var max = 99999999;
     var rand = Math.floor(min + (Math.random() * (max - min)));
     let date = new Date("2021-03-25");
-    let detailedDate = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
+    // let detailedDate = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
     let location = useLocation();
-    console.log(location.pathname);
+    let userNum = location.pathname.slice(7);
 
     let usersData = [
-        { id: 1, img: user1, code: rand, name: "عبد الرحمن ابراهيم امين عبد الحميد", career: "عامل", passportNum: "A30362793", birthDate: Date("06/04/1990") },
+        { id: 1, img: user1, code: rand, name: "محمد محمد بيومى السقا", nameEng: "Mohamed Mohamed Bayoumi Elsaka", career: "طبيب اسنان", passportNum: "A35495787", birthDate: "25/07/1984",qr:qr1},
+        { id: 2, img: user2, code: rand, name: "اسلام عبد الرازق محمد عبد الرازق", nameEng: "Islam AbdElrazek Mohamed AbdElrazek", career: "طبيب", passportNum: "A32441364", birthDate: "10/10/1986",qr:qr2},
+        { id: 3, img: user3, code: rand, name: "متولى على متولى على", nameEng: "Metwally Ali Metwally Ali", career: "طبيب", passportNum: "A32585741", birthDate: "02/01/1984",qr:qr3},
     ]
 
 
     return (
         <div className='home'>
             <div className="navB">
-                <LazyLoadImage src={user1} className='user-img'></LazyLoadImage>
+                <LazyLoadImage src={usersData[userNum-1].img} className='user-img'></LazyLoadImage>
                 <LazyLoadImage src={wezarah}></LazyLoadImage>
             </div>
             <div className="arabic hagez">
@@ -40,7 +50,7 @@ export default function Users() {
                         <p>رمز التصريح</p>
                         <p>Permit Code</p>
                     </div>
-                    <div><span> أ </span><span>1603161</span></div>
+                    <div><span> أ </span><span>{rand}</span></div>
                 </div>
                 <div className="item">
                     <div className="title">
@@ -59,7 +69,7 @@ export default function Users() {
                         <p>اسم المستلم</p>
                         <p>Recepient Name</p>
                     </div>
-                    <p>{usersData[0].name}</p>
+                    <p>{usersData[userNum-1].name}</p>
                 </div>
                 <div className="item">
                     <div className="title">
@@ -73,7 +83,7 @@ export default function Users() {
                         <p>هوية المستلم</p>
                         <p>Recepient National</p>
                     </div>
-                    <p>A30362793</p>
+                    <p>{usersData[userNum-1].passportNum}</p>
                 </div>
             </div>
             <div className="data-items arabic">
@@ -82,7 +92,7 @@ export default function Users() {
                         <p>تاريخ الميلاد</p>
                         <p>Birth date</p>
                     </div>
-                    <p>06/04/1990</p>
+                    <p>{usersData[userNum-1].birthDate}</p>
                 </div>
                 <div className="item">
                     <div className="title">
