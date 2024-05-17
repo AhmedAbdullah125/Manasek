@@ -24,6 +24,7 @@ export default function Card() {
                 <div className="qr1-cont">
                     <img src={usersData[0].qr} alt="" />
                 </div>
+                <p className='random'>{rand}</p>
             </div>
         </div>
     )
