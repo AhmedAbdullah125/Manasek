@@ -40,7 +40,7 @@ export default function Home() {
 
     <div className='home'>
       <div className="navB">
-        <p className='Logo'>الحاج سيد العربى للسياحه</p>
+        <p className='Logo'>الاندلس للسياحه</p>
         <LazyLoadImage src={wezarah}></LazyLoadImage>
       </div>
       <div className="cards-cont">
