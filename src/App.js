@@ -4,6 +4,7 @@ import { Suspense, lazy } from 'react';
 import NotFound from './pages/NotFound';
 import Users from './pages/Home/Users';
 import Card from './pages/Home/Card';
+import CardsBack from './pages/Home/CardsBack';
 
 const Home = lazy(() => import('./pages/Home/Home'))
 
@@ -13,6 +14,7 @@ function App() {
     { index: true, element: <Suspense><Home></Home></Suspense> },
     { path: '/users/*', element: <Users></Users> },
     { path: '/card/*', element: <Card></Card> },
+    { path: '/cardback/*', element: <CardsBack></CardsBack> },
     { path: '*', element: <NotFound></NotFound> },
     // { path: '/courses', element: <CoursesPage></CoursesPage> },
     // { path: '/Services', element: <ServicesPage></ServicesPage> },

@@ -411,7 +411,7 @@ ol.breadcrumb li:not(.active):after {
   margin-top: 62px;
 }
 .content .qr1-cont {
-  margin-top: 163px;
+  margin-top: 142px;
   height: 167px;
   width: 165px;
   overflow: hidden;
@@ -428,4 +428,13 @@ ol.breadcrumb li:not(.active):after {
   font-size: 32px;
   font-weight: 600;
   color: #16684e;
+}
+
+.card-back .content .qr1-cont {
+  margin-top: 51px;
+  height: 147px;
+  width: 140px;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  margin-left: 0px;
 }/*# sourceMappingURL=main.css.map */
