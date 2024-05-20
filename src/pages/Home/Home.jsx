@@ -1,5 +1,5 @@
 import React from 'react'
-import wezarah from '../../assets/1.jpg'
+import wezarah from '../../assets/1.png'
 import user1 from '../../assets/users/user1.png'
 import user2 from '../../assets/users/user2.png'
 import user3 from '../../assets/users/user3.png'
