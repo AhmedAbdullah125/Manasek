@@ -7,13 +7,11 @@ import { usersContext } from '../../Context/UsersContext'
 
 export default function Card(arr) {
     let usersData = useContext(usersContext);
-
     var min = 10000000;
     var max = 99999999;
     var rand = Math.floor(min + (Math.random() * (max - min)));
     let location = useLocation();
     let userNum = location.pathname.slice(6);
-
     return (
         <div className='card' style={{ backgroundImage: `url(${card1})` }}>
             <div className="content">

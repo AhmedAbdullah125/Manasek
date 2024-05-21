@@ -12,24 +12,13 @@ import qr4 from '../assets/QRs/4.png'
 import qr5 from '../assets/QRs/5.png'
 import qr6 from '../assets/QRs/6.png'
 
-
 export let usersContext = createContext(0);
 
 export default function UsersContextProvider({ children }) {
-
-    let [count,setCount] =useState(0);
-    function changCount(){
-        setCount(count+1);
-    }
-    // let name = this.props.name;
-    // console.log(name);
+    
     var min = 10000000;
     var max = 99999999;
     var rand = Math.floor(min + (Math.random() * (max - min)));
-    let date = new Date("2021-03-25");
-    // let detailedDate = `${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
-
-
     let usersData = [
         { id: 1, img: user1, code: rand, name: "محمد محمد بيومى السقا", nameEng: "Mohamed Mohamed Bayoumi Elsaka", career: "طبيب اسنان", passportNum: "A35495787", birthDate: "25/07/1984", qr: qr1 },
         { id: 2, img: user2, code: rand, name: "اسلام عبد الرازق محمد عبد الرازق", nameEng: "Islam AbdElrazek Mohamed AbdElrazek", career: "طبيب", passportNum: "A32441364", birthDate: "10/10/1986", qr: qr2 },
@@ -38,9 +27,6 @@ export default function UsersContextProvider({ children }) {
         { id: 5, img: user5, code: rand, name: "اسماعيل محمد صبرى محمد", nameEng: "Ismail Mohamed Sabry Mohamed", career: "طبيب", passportNum: "A21636152", birthDate: "04/03/1986", qr: qr5 },
         { id: 6, img: user6, code: rand, name: "السيد محمد السيد الغرباوى", nameEng: "ُElsayed Mohamed Elasyed Elgharabawy", career: "حر", passportNum: "A28504983", birthDate: "17/10/1978", qr: qr6 },
     ]
-
-
-
     return <usersContext.Provider value={usersData}>
         {children}
     </usersContext.Provider>

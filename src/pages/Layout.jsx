@@ -1,17 +1,10 @@
 import React, { useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
-
-// import icon from '/assets/ABC 16.webp'
-// import Favicon from 'react-favicon';
-
 export default function Layout() {
-
     useEffect(() => {
         document.title = "Manasek Alhaj"
     }, []);
     return (
-        <Outlet >
-            {/* <Favicon /> */}
-        </Outlet>
+        <Outlet ></Outlet>
     )
 }

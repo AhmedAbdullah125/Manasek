@@ -16,17 +16,13 @@ function App() {
     { path: '/card/*', element: <Card></Card> },
     { path: '/cardback/*', element: <CardsBack></CardsBack> },
     { path: '*', element: <NotFound></NotFound> },
-    // { path: '/courses', element: <CoursesPage></CoursesPage> },
-    // { path: '/Services', element: <ServicesPage></ServicesPage> },
   ]
 }
 ])
-
 return (
   <div>
     <RouterProvider router={routes}></RouterProvider>
   </div>
 );
 }
-
 export default App;

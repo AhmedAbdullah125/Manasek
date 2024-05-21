@@ -10,11 +10,7 @@ import UsersContextProvider from './Context/UsersContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-
-
-
     <UsersContextProvider>
-
     <App />
     </UsersContextProvider>
 );
