@@ -31,7 +31,7 @@ export default function UsersContextProvider({ children }) {
         { id: 5, img: user5, code: rand, name: "اسماعيل محمد صبرى محمد", nameEng: "Ismail Mohamed Sabry Mohamed", career: "طبيب", passportNum: "A21636152", birthDate: "04/03/1986", qr: qr5 },
         { id: 6, img: user6, code: rand, name: "السيد محمد السيد الغرباوى", nameEng: "ُElsayed Mohamed Elasyed Elgharabawy", career: "حر", passportNum: "A28504983", birthDate: "17/10/1978", qr: qr6 },
         { id: 7, img: user7, code: rand, name: "محمد عسكر عبد الكريم عبد الرحمن", nameEng: "ُMohamed Asskar Abdelkarim", career: "عامل", passportNum: "A32717928", birthDate: "18/08/1983", qr: qr7 },
-        { id: 7, img: user7, code: rand, name: "على صبرى على سليمان", nameEng: "ُAli Sabry Ali Souliman", career: "نائب مدير بنك", passportNum: "A32717928", birthDate: "01/07/1978", qr: qr8 },
+        { id: 7, img: user8, code: rand, name: "على صبرى على سليمان", nameEng: "ُAli Sabry Ali Souliman", career: "نائب مدير بنك", passportNum: "A32717928", birthDate: "01/07/1978", qr: qr8 },
         
     ]
     return <usersContext.Provider value={usersData}>
