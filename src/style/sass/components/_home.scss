@@ -19,6 +19,18 @@ a{
     .user-img {
         border-radius: 50%;
     }
+    .user-img-cont{
+        height: 45px;
+        width: 45px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
 }
 
 .arabic {

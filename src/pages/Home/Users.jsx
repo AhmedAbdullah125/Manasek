@@ -6,7 +6,7 @@ import { usersContext } from '../../Context/UsersContext'
 
 export default function Users() {
     let usersData = useContext(usersContext);
-    
+
     var min = 10000000;
     var max = 99999999;
     var rand = Math.floor(min + (Math.random() * (max - min)));
@@ -16,7 +16,7 @@ export default function Users() {
     return (
         <div className='home'>
             <div className="navB">
-                <LazyLoadImage src={usersData[userNum - 1].img} className='user-img'></LazyLoadImage>
+                <div className="user-img-cont"><LazyLoadImage src={usersData[userNum - 1].img} className='user-img'></LazyLoadImage></div>
                 <LazyLoadImage src={wezarah}></LazyLoadImage>
             </div>
             <div className="arabic hagez">

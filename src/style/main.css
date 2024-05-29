@@ -332,6 +332,19 @@ a {
 .navB .user-img {
   border-radius: 50%;
 }
+.navB .user-img-cont {
+  height: 45px;
+  width: 45px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.navB .user-img-cont img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .arabic {
   direction: rtl;
