@@ -19,6 +19,9 @@ import user17 from '../assets/users/user17.png'
 import user18 from '../assets/users/user18.png'
 import user19 from '../assets/users/user19.png'
 import user20 from '../assets/users/user20.png'
+import user21 from '../assets/users/user21.png'
+import user22 from '../assets/users/user22.png'
+import user23 from '../assets/users/user23.png'
 
 import qr1 from '../assets/QRs/1.png'
 import qr2 from '../assets/QRs/2.png'
@@ -40,6 +43,9 @@ import qr17 from '../assets/QRs/17.png'
 import qr18 from '../assets/QRs/18.png'
 import qr19 from '../assets/QRs/19.png'
 import qr20 from '../assets/QRs/20.png'
+import qr21 from '../assets/QRs/21.png'
+import qr22 from '../assets/QRs/22.png'
+import qr23 from '../assets/QRs/23.png'
 
 export let usersContext = createContext(0);
 
@@ -69,6 +75,9 @@ export default function UsersContextProvider({ children }) {
         { id: 18, img: user18, code: rand, name: "احمد خيرى ابو الخير عبد الجواد", nameEng: "ُAhmed khairy Abo Elkhair", career: "عامل", passportNum: "A30136931", birthDate: "11/01/1988", qr: qr18 },
         { id: 19, img: user19, code: rand, name: "محمود عبد العزيز البكرى جوهر", nameEng: "ُMahmoud Abd Elaziz elbakry", career: "عامل", passportNum: "A36659828", birthDate: "06/08/1985", qr: qr19 },
         { id: 20, img: user20, code: rand, name: "مفيد أحمد سلامه عدس", nameEng: "ُMofid Ahmed Salama Ades", career: "بدوت عمل", passportNum: "A2499672", birthDate: "13/11/1958", qr: qr20 },
+        { id: 21, img: user21, code: rand, name: "مصطفى سعيد نصر الدين على", nameEng: "ُMOUSTAFA SAID NASRELDIN ALI", career: "محفظ قران", passportNum: "A36714780", birthDate: "05/11/1983", qr: qr21 },
+        { id: 22, img: user22, code: rand, name: "احمد سمير ابراهيم زعبل", nameEng: "ُAhmed  SAMIR IBRAHIM ZAABAL", career: "محامى", passportNum: "A35148278", birthDate: "22/9/1984", qr: qr22 },
+        { id: 23, img: user23, code: rand, name: "عبد الرحمن عادل على بهلول", nameEng: "ُAbdElrahman Adel Ali Bahlol", career: "صاحب مؤسسه توريدات", passportNum: "A32826992", birthDate: "27/3/1988", qr: qr23 },
         
     ]
     return <usersContext.Provider value={usersData}>
