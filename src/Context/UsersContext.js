@@ -26,6 +26,7 @@ import user24 from '../assets/users/user24.png'
 import user25 from '../assets/users/user25.png'
 import user26 from '../assets/users/user26.png'
 import user27 from '../assets/users/user27.png'
+import user28 from '../assets/users/user28.png'
 
 import qr1 from '../assets/QRs/1.png'
 import qr2 from '../assets/QRs/2.png'
@@ -54,6 +55,7 @@ import qr24 from '../assets/QRs/24.png'
 import qr25 from '../assets/QRs/25.png'
 import qr26 from '../assets/QRs/26.png'
 import qr27 from '../assets/QRs/27.png'
+import qr28 from '../assets/QRs/28.png'
 
 export let usersContext = createContext(0);
 
@@ -90,6 +92,7 @@ export default function UsersContextProvider({ children }) {
         { id: 25, img: user25, code: rand, name: "حسام عاشور عبد الفتاح جابر", nameEng: "ُHossam Asour Abdelfattah Gaber", career: "محاسب ", passportNum: "A32238385", birthDate: "18/09/1985", qr: qr25 },
         { id: 26, img: user26, code: rand, name: "مصطفى محمد محمود فهمى", nameEng: "ُMostafa Mohamed Mahmoud Fahmy", career: "مدرس ", passportNum: "A28802779", birthDate: "10/12/1984", qr: qr26 },
         { id: 27, img: user27, code: rand, name: "منى عباس على حسانين", nameEng: "ُMona Abbas Ali Hassanein", career: "طبيبه ", passportNum: "A33205176", birthDate: "04/05/1986", qr: qr27 },
+        { id: 28, img: user28, code: rand, name: "محمود حسيني عبد الفتاح", nameEng: "ُOsama Mahmmoud Hosini Abdulfatah ", career: "مهندس ", passportNum: "A26600277", birthDate: "02/02/1980", qr: qr28 },
         
     ]
     return <usersContext.Provider value={usersData}>
