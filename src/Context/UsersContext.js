@@ -94,7 +94,7 @@ export default function UsersContextProvider({ children }) {
         { id: 25, img: user25, code: rand, name: "حسام عاشور عبد الفتاح جابر", nameEng: "ُHossam Asour Abdelfattah Gaber", career: "محاسب ", passportNum: "A32238385", birthDate: "18/09/1985", qr: qr25 },
         { id: 26, img: user26, code: rand, name: "مصطفى محمد محمود فهمى", nameEng: "ُMostafa Mohamed Mahmoud Fahmy", career: "مدرس ", passportNum: "A28802779", birthDate: "10/12/1984", qr: qr26 },
         { id: 27, img: user27, code: rand, name: "منى عباس على حسانين", nameEng: "ُMona Abbas Ali Hassanein", career: "طبيبه ", passportNum: "A33205176", birthDate: "04/05/1986", qr: qr27 },
-        { id: 28, img: user28, code: rand, name: "محمود حسيني عبد الفتاح", nameEng: "ُOsama Mahmmoud Hosini Abdulfatah ", career: "مهندس ", passportNum: "A26600277", birthDate: "02/02/1980", qr: qr28 },
+        { id: 28, img: user28, code: rand, name: " اسامه محمود حسيني عبد الفتاح", nameEng: "ُOsama Mahmmoud Hosini Abdulfatah ", career: "مهندس ", passportNum: "A26600277", birthDate: "02/02/1980", qr: qr28 },
         { id: 29, img: user29, code: rand, name: "محمد على غانم محمد", nameEng: "ُMohamed Ali Ghanem Mohamed", career: "مدير شركه الحمد ", passportNum: "A28707212", birthDate: "29/11/1979", qr: qr29 },
         
     ]
