@@ -28,6 +28,8 @@ import user26 from '../assets/users/user26.png'
 import user27 from '../assets/users/user27.png'
 import user28 from '../assets/users/user28.png'
 import user29 from '../assets/users/user29.png'
+import user30 from '../assets/users/user30.png'
+import user31 from '../assets/users/user31.png'
 
 import qr1 from '../assets/QRs/1.png'
 import qr2 from '../assets/QRs/2.png'
@@ -58,6 +60,8 @@ import qr26 from '../assets/QRs/26.png'
 import qr27 from '../assets/QRs/27.png'
 import qr28 from '../assets/QRs/28.png'
 import qr29 from '../assets/QRs/29.png'
+import qr30 from '../assets/QRs/30.png'
+import qr31 from '../assets/QRs/31.png'
 
 export let usersContext = createContext(0);
 
@@ -96,6 +100,8 @@ export default function UsersContextProvider({ children }) {
         { id: 27, img: user27, code: rand, name: "منى عباس على حسانين", nameEng: "ُMona Abbas Ali Hassanein", career: "طبيبه ", passportNum: "A33205176", birthDate: "04/05/1986", qr: qr27 },
         { id: 28, img: user28, code: rand, name: " اسامه محمود حسيني عبد الفتاح", nameEng: "ُOsama Mahmmoud Hosini Abdulfatah ", career: "مهندس ", passportNum: "A26600277", birthDate: "02/02/1980", qr: qr28 },
         { id: 29, img: user29, code: rand, name: "محمد على غانم محمد", nameEng: "ُMohamed Ali Ghanem Mohamed", career: "مدير شركه الحمد ", passportNum: "A28707212", birthDate: "29/11/1979", qr: qr29 },
+        { id: 30, img: user30, code: rand, name: "مريم احمد جودة السيد", nameEng: "ُMariam Ahmed Goda Elsayed", career: "ربة منزل", passportNum: "A36149530", birthDate: "27/8/1990", qr: qr30 },
+        { id: 31, img: user31, code: rand, name: "رمضان محمد نصر هلال النجدى", nameEng: "ُRamadan Mohamed Nasr Helal", career: "طبيب", passportNum: "A36149598", birthDate: "01/02/1984", qr: qr31 },
         
     ]
     return <usersContext.Provider value={usersData}>
